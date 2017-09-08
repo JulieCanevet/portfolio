@@ -3,15 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>production</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel = "stylesheet" href = "font-awesome-4.7.0/css/font-awesome.min.css"> 
+        <link rel = "stylesheet" href = "font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css/bootstrap.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -20,31 +22,63 @@
         <![endif]-->
 
         <header>
-            <h2>DEVELOPPEUSE WEB FONT-BACK</h2>
-            <p>formation Simplon</p>
-            <h1>JULIE CANEVET</h1>
+            <h3>DEVELOPPEUSE<br>WEB<br>FRONT - BACK</h3>
+            <hr class="petitHr">
+            <h1>JULIE<br>CANEVET</h1>
+            <p>formation Simplon 2017</p>
             <figure>
                 <img src="img/site.voyage.png">
             </figure>
+            <hr class="largeHr">
             <p>PORTFOLIO</p>
         </header>
 
         <section id="mesProjets">
-        <h2>Mes projets</h2>
+            <h2>Mes projets <br> <hr></h2>
+    <!-- Cartes bootstrap presentation des projets -->
+                <article class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/ontech.png" alt="vignette du site On.tech">
+                    <div class="card-block">
+                        <h4 class="card-title">On.tech</h4>
+                        <p class="card-text">Réaliser en groupe un site fictif pour une agence de communication web</p>
+                        <a href="#" class="btn btn-primary">Voir</a>
+                    </div>
+                </article>
 
+                <article class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/archiduchesse.png" alt="Reproduction du site de l'archiduchesse">
+                    <div class="card-block">
+                        <h4 class="card-title">Site de l'Archiduchesse</h4>
+                        <p class="card-text">Reproduction du site de vente de chaussettes</p>
+                        <a href="#" class="btn btn-primary">Voir</a>
+                    </div>
+                </article>
+
+                <article class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/boncoin.png" alt="Reproduction du site Le Bon Coin">
+                    <div class="card-block">
+                        <h4 class="card-title">Le Bon Coin</h4>
+                        <p class="card-text">Reproduction du site le bon coin</p>
+                        <a href="#" class="btn btn-primary">Voir</a>
+                    </div>
+                </article>
         </section>
 
+    <!-- Section 'qui suis-je' présentations / compétences -->
         <section id="quiSuisJe">
-            <h2>Qui suis-je ?</h2>
+            <h2>Qui suis-je ? <br> <hr></h2>
+            
             <figure>
-                <img src="">
+                <img src="img/julie.png" alt="photo de Julie">
             </figure>
+
             <h3>Comment pourquoi ?</h3>
             <p>j'aime bien les ordinateurs</p>
         </section>
 
+    <!-- Section 'contact' / formulaire -->
         <section id="contact">
-            <h2>N'hésitez pas à me contacter</h2>
+            <h2>N'hésitez pas à me contacter <br> <hr></h2>
             <form>
                 <input type="text">
                 <input type="text">
@@ -52,27 +86,10 @@
             </form>
         </section>
 
+    <!-- Début du footer -->
         <section id="footer">
             <p>Merci d'avoir jeté un oeil</p>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
