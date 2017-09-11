@@ -193,6 +193,14 @@ header figure {
 #quiSuisJe h3 {
     margin: 2em auto 1em 1em;
 }
+.rondRose{
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #B21067;
+    width: 90px;
+    height: 90px;
+}
 
 .left {
     border-left: 2px solid black;
@@ -246,7 +254,7 @@ footer p {
 
 /* **************** MEDIA QUERY ******************** */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
     .tablette {
         display: block;
     }
@@ -327,6 +335,48 @@ footer p {
     }
 
 /* Partie presentation des projets*/
+    .projets {
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+        }
+    .projets figure {
+        width: 30%;
+        margin: 1em auto 1em auto;
+        text-align: center;
+        }
+    .projets a {
+        color: #FFFFFF00;
+        color: rgba(255, 255, 255, .0);
+        font-family: 'Abril Fatface', cursive;
+    }
+    .projets h3 {
+        font-size: 14px;
+        position: absolute;
+        color: #FFFFFF00;
+        color: rgba(255, 255, 255, .0);
+        top: 0;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+/* PARTIE QUI SUIS-JE */
+    #quiSuisJe {
+        display: flex;
+        justify-content: space-around;
+    }
+    .competences {
+        width: 50%;
+    }
+    #quiSuisJe figure{
+        position: sticky;
+        top: 6em;
+    }
+
+
 }
 /* ==========================================================================
    Helper classes
