@@ -69,29 +69,84 @@
             <h2>Qui suis-je ? <br> <hr></h2>
             
             <figure>
-                <img src="img/julie.png" alt="photo de Julie">
+                <img id="portrait" src="img/julie.png" alt="photo de Julie">
             </figure>
 
-            <h3>Comment pourquoi ?</h3>
-            <p>j'aime bien les ordinateurs</p>
+            <h3>Les questions qui se posent ..</h3>
+            
+            <p class="left">Je m'appelle Julie, j'ai 23 ans, j'aime tout le monde</p>
+            
+            <p class="right">Etudes scientifiques, droit, communication, informatique.</p>
+            
+            <p class="left">Une passion ? J'ai longtemps eu honte de répondre à cette question puis il était temps de s'assumer. Je n'ai pas de passion. Ce qui ne veut pas dire que je ne suis pas une personne passionnée. J'aime les gens, j'aime la vie, je vous aime.</p>
+            
+            <h3>Mes compétences</h3>
+            
+            <article class="logo">
+                <figure>
+                    <img src="img/bootstrap.png" alt="logo Bootstrap">
+                </figure>
+                <figure>
+                    <img src="img/jquery.png" alt="logo JQuery">
+                </figure>
+                <figure>
+                    <img src="img/js.png" alt="logo JavaScript">
+                </figure>
+                <figure>
+                    <img src="img/php.png" alt="logo PHP">
+                </figure>
+                <figure>
+                    <img src="img/git.png" alt="logo Github">
+                </figure>
+                <figure>
+                    <img src="img/html.png" alt="logo HTML 5">
+                </figure>
+                <figure>
+                    <img src="img/css3.png" alt="logo CSS 3">
+                </figure>
+            </article>
         </section>
 
     <!-- Section 'contact' / formulaire -->
         <section id="contact">
             <h2>N'hésitez pas à me contacter <br> <hr></h2>
-            <form>
-                <input type="text">
-                <input type="text">
-                <input type="submit">
-            </form>
+            <form class="main">
+            
+            <article class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Votre nom</label>
+               <div class="input-group cols-sm-10">
+                <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+               <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+               </div>
+            </article>
+
+            <article class="form-group">
+              <label for="email" class="cols-sm-2 control-label">Votre adresse Email</label>
+                <div class="input-group cols-sm-10">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                </div>
+            </article>
+
+            <article class="form-group">
+              <label for="email" class="cols-sm-2 control-label">Votre Message</label>
+                <div class="input-group cols-sm-10">
+                  <span class="input-group-addon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
+                  <textarea class="form-control" name="message" id="message"  placeholder="Your message"></textarea>
+                </div>
+            </article>
+
+            <article class="form-group">
+              <a href="#" type="button" id="button">Envoyer</a>
+            </article>
+            
+     </form>
         </section>
 
-    <!-- Début du footer -->
-        <section id="footer">
-            <p>Merci d'avoir jeté un oeil</p>
-        </section>
-
-
+<!-- FOOTER -->
+        <footer>
+            <p>- Merci d'avoir pris le temps -</p>
+        </footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
