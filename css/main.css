@@ -118,18 +118,20 @@ h1, h2, h3 {
     font-family: 'Abril Fatface', cursive;
 }
 
+/* Titre Julie Canevet */
 h1 {
     font-size: 2.5em;
     margin: auto auto .5em auto;
     letter-spacing: .05em;
 }
-
+/* Titre des sections */
 h2 {
-    margin: 1em auto 2em 1em;
+    margin: 1em auto 1em 1em;
     letter-spacing: .25em;
     width: 290px;
 }
 
+/* sous-titres et paragraphes header / footer */
 h3, header p, footer p {
     letter-spacing: .1em;
 }
@@ -142,15 +144,26 @@ h2 hr {
 
 /* ====== Reglage des composants du header ====== */
 .navbar {
-  position: sticky;
-  -webkit-position:sticky;
+  position: fixed;
   top: 2em;
+  left: 1em;
   font-family: 'Raleway', sans-serif;
+}
+/* Elements (li) cachés */
+#navbarNav {
+    top: 5em;
+    position: fixed;
+    background-color: #F7F7F7;
+}
+.bg-faded {
+    background-color: transparent;
 }
 nav {
   z-index: 3;
   background-color: transparent;
 }
+/*fin de la navbar */
+
 header {
     text-align: center;
     margin-top: 3em;
@@ -244,7 +257,7 @@ footer {
     width: 100%;
     padding: 1.4em;
     text-align: center;
-    margin-top: 3.5em;
+    margin-top: 3em;
 }
 
 footer p {   
@@ -261,25 +274,9 @@ footer p {
     .phone {
         display: none;
     }
-    /* Reglages de la barre de navigation */
-    .navbar {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      top: 0;
+    #navbarNav li{
+        margin: 1em;
     }
-    .navbar-toggleable-md .navbar-collapse {
-        width: auto;
-    }
-    .navbar-toggleable-md .navbar-nav .nav-link {
-        margin-right: 2em;
-        color: black;
-        font-weight: normal;
-    }
-    .navbar a:hover {
-       border-bottom: 1.5px solid black;
-    }
-    
     /* accueil version tablette / desktop */
     .back {
         width: 97%;
@@ -297,27 +294,27 @@ footer p {
         justify-content: center;
         font-family: 'Abril Fatface', cursive;
     }
-    header {
-        margin-top: auto;
-    }
 
-/* Article de gauche de la presentation */
-    .headerPresentation {
+/* header + Article de gauche de la presentation */
+    header, .headerPresentation {
         margin-top: 4em;
     }
 
 /* Article du milieu */
     .articleMilieu figure {
         width: 100%;
+        max-width: 750px;
     }
 
 /* Partie basse de l'article du milieu */
-    .articleBas img, .articleBas p {
-        width: 45%;
+    .articleBas img{
+        min-width: 150px;
+        margin-left: .5em;
     }
     .articleBas p {
         border-right: 1.5px solid black;
         padding-right: 1em;
+        width: 45%;
     }
     .articleBas {
         display: flex;
@@ -360,9 +357,56 @@ footer p {
         line-height: 1.5em;
         font-weight: bold;
     }
+
+    #contact {
+        background-image: url(../img/contact.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 700px;
+        width: 100%;
+        margin-bottom: 0;
+        padding-top: 2em;
+        margin-top: 2em;
+    }
+    form {
+        width: 70%;
+    }
+/* Bouton envoyer du formulaire */
+    #button {
+        color: white;
+        border-color: white;
+    }
+
+    footer {
+        margin-top: 0;
+    }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 990px) {
+ /* Reglages de la barre de navigation */
+    .navbar a:hover {
+       border-bottom: 1.5px solid black;
+       color: black;
+    }
+
+    #navbarNav, .navbar {
+      position: static;
+    }
+/* Liens de la navbar */
+    #navbarNav{
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    header {
+      margin-top: 0;
+      margin-bottom: 3em;
+    }
+    header figure {
+        margin-top: auto;
+    }
+
 /* PARTIE QUI SUIS-JE */
     #quiSuisJe {
         display: flex;
