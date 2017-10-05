@@ -355,6 +355,7 @@ footer p {
     #button {
         color: white;
         border-color: white;
+        background-color: rgba(255, 255, 255, 0);
     }
 
     footer {
@@ -443,12 +444,14 @@ footer p {
 
     .couleurHover button {
         background-color: #FFFFFF00;
+        background-color: rgba(255, 255, 255, 0);
         color: transparent;
         border-color: transparent;
         font-family: 'Abril Fatface', cursive;
     }
     .couleurHover button:hover{
         background-color: #FFFFFF90;
+        background-color: rgba(255, 255, 255, .7);
         transition : .8s;
         color: black;
         border-color: transparent;
@@ -468,7 +471,7 @@ footer p {
         justify-content: space-around;
     }
     .competences {
-        width: 60%;
+        width: 55%;
         margin-right: 2em;
     }
     #quiSuisJe figure{
