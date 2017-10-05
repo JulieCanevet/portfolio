@@ -191,6 +191,7 @@ header figure {
 .card {
     margin: 2em auto;
     border: 1px solid grey;
+    width: 15rem;
 }
 
 /* === Reglage de la partie presentation - competences === */
