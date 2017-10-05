@@ -193,6 +193,9 @@ header figure {
     border: 1px solid grey;
     width: 15rem;
 }
+.card img {
+    width: 100%;
+}
 
 /* === Reglage de la partie presentation - competences === */
 #quiSuisJe figure {
