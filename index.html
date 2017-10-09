@@ -86,7 +86,9 @@
                       <div class="card-block">
                           <h4 class="card-title">On.tech</h4>
                           <p class="card-text">Réaliser en groupe un site fictif pour une agence de communication web</p>
-                          <a href="#" class="btn btn-primary">Voir</a>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projetOntech">
+                            Voir plus
+                          </button>
                       </div>
                   </article>
 
@@ -95,7 +97,9 @@
                       <div class="card-block">
                           <h4 class="card-title">Site de l'Archiduchesse</h4>
                           <p class="card-text">Reproduction du site de vente de chaussettes</p>
-                          <a href="#" class="btn btn-primary">Voir</a>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projetArchiduchesse">
+                            Voir plus
+                          </button>
                       </div>
                   </article>
 
@@ -104,7 +108,9 @@
                       <div class="card-block">
                           <h4 class="card-title">Le Bon Coin</h4>
                           <p class="card-text">Reproduction du site le bon coin</p>
-                          <a href="#" class="btn btn-primary">Voir</a>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projetBoncoin">
+                            Voir plus
+                          </button>
                       </div>
                   </article>
                 </section>
@@ -356,7 +362,8 @@
     <!-- Section 'contact' / formulaire -->
         <section id="contact">
             <h2>N'hésitez pas à me contacter <br> <hr></h2>
-            <form class="main" action="mailto:julie.canevet@hotmail.fr?subject=Portfolio">
+          
+          <form class="main" action="mailto:julie.canevet@hotmail.fr?subject=Portfolio">
             
             <article class="form-group">
               <label for="name" class="cols-sm-2 control-label">Votre nom</label>
@@ -383,11 +390,11 @@
             </article>
 
             <article class="form-group">
-              <input type="hidden" name="">
-              <button id="button">Envoyer</a>
+              <input type="hidden" name="submit">
+              <button id="button">Envoyer</button>
             </article>
             
-     </form>
+          </form>
         </section>
 
 <!-- FOOTER -->
