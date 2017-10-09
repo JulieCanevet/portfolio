@@ -187,7 +187,10 @@ header figure {
 }
 
 /* ====== Reglage de la presentation des projets ====== */
-
+#presentationCartes {
+    display: flex;
+    flex-wrap: wrap;
+}
 .card {
     margin: 2em auto;
     border: 1px solid grey;
@@ -198,6 +201,10 @@ header figure {
 }
 
 /* === Reglage de la partie presentation - competences === */
+#quiSuisJe {
+    width: 95%;
+    margin: auto;
+}
 #quiSuisJe figure {
     max-width: 350px;
     margin: auto;
@@ -239,6 +246,24 @@ header figure {
 }
 .logo figure {
     width: 60px;
+}
+
+#cv {
+    width: 300px;
+    text-align: center;
+    margin: 2em auto 3em auto;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: .6em;
+    cursor: pointer;
+    background-image: linear-gradient(90deg,black 49.9%,white 50%);
+
+}
+#cv a {
+    mix-blend-mode: difference;
+    color: #eff3fb;
 }
 /* ====== Reglage de la partie contact ====== */
 form {
@@ -340,7 +365,9 @@ footer p {
         padding-bottom: 1em;
         margin-top: 10em;
     }
-
+    .card {
+        width: 20rem;
+    }
     #contact {
         background-image: url(../img/contact.jpg);
         background-repeat: no-repeat;
@@ -355,6 +382,7 @@ footer p {
     form {
         width: 70%;
     }
+
 /* Bouton envoyer du formulaire */
     #button {
         color: white;
@@ -479,8 +507,13 @@ footer p {
         margin-right: 2em;
     }
     #quiSuisJe figure{
+        margin-top: 1.5em;
         position: sticky;
-        top: 1em;
+        top: 1.5em;
+    }
+    #quiSuisJe h3 {
+        margin: auto;
+        margin-bottom: 2em;
     }
 
 

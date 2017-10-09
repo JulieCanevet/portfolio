@@ -80,32 +80,34 @@
         <section id="mesProjets">
             <h2>Mes projets <br> <hr></h2>
     <!-- Cartes bootstrap presentation des projets version mobile -->
-                <article class="card phone">
-                    <img class="card-img-top" src="img/ontech.png" alt="vignette du site On.tech">
-                    <div class="card-block">
-                        <h4 class="card-title">On.tech</h4>
-                        <p class="card-text">Réaliser en groupe un site fictif pour une agence de communication web</p>
-                        <a href="#" class="btn btn-primary">Voir</a>
-                    </div>
-                </article>
+                <section id="presentationCartes">
+                  <article class="card phone">
+                      <img class="card-img-top" src="img/ontech.png" alt="vignette du site On.tech">
+                      <div class="card-block">
+                          <h4 class="card-title">On.tech</h4>
+                          <p class="card-text">Réaliser en groupe un site fictif pour une agence de communication web</p>
+                          <a href="#" class="btn btn-primary">Voir</a>
+                      </div>
+                  </article>
 
-                <article class="card phone" style="width: 20rem;">
-                    <img class="card-img-top" src="img/archiduchesse.png" alt="Reproduction du site de l'archiduchesse">
-                    <div class="card-block">
-                        <h4 class="card-title">Site de l'Archiduchesse</h4>
-                        <p class="card-text">Reproduction du site de vente de chaussettes</p>
-                        <a href="#" class="btn btn-primary">Voir</a>
-                    </div>
-                </article>
+                  <article class="card phone">
+                      <img class="card-img-top" src="img/archiduchesse.png" alt="Reproduction du site de l'archiduchesse">
+                      <div class="card-block">
+                          <h4 class="card-title">Site de l'Archiduchesse</h4>
+                          <p class="card-text">Reproduction du site de vente de chaussettes</p>
+                          <a href="#" class="btn btn-primary">Voir</a>
+                      </div>
+                  </article>
 
-                <article class="card phone" style="width: 20rem;">
-                    <img class="card-img-top" src="img/boncoin.png" alt="Reproduction du site Le Bon Coin">
-                    <div class="card-block">
-                        <h4 class="card-title">Le Bon Coin</h4>
-                        <p class="card-text">Reproduction du site le bon coin</p>
-                        <a href="#" class="btn btn-primary">Voir</a>
-                    </div>
-                </article>
+                  <article class="card phone">
+                      <img class="card-img-top" src="img/boncoin.png" alt="Reproduction du site Le Bon Coin">
+                      <div class="card-block">
+                          <h4 class="card-title">Le Bon Coin</h4>
+                          <p class="card-text">Reproduction du site le bon coin</p>
+                          <a href="#" class="btn btn-primary">Voir</a>
+                      </div>
+                  </article>
+                </section>
 <!-- FIN DE LA PRESENTATION DES PROJETS VERSION MOBILE -->
 <!-- PRESENTATION DES PROJETS VERSION TABLETTE -->
     <article class="tablette projets">
@@ -247,7 +249,7 @@
       </div>
       <div class="modal-body">
         <figure>
-            <img src="img/airbnb.png">
+            <img src="img/sport.png">
         </figure>
             <p>Ce site est un exercice de création. Nous avons du imaginer un site de coaching sportif. <br>Langages utilisés : CSS, HTML.</p>     
       </div>
@@ -303,7 +305,6 @@
     </div>
   </div>
 </article>
-<!-- ****************** FIN DU TEST AU CAS OU CA MARCHE PAS *********************** -->
 
     <!-- Section 'qui suis-je' présentations / compétences -->
             <h2>Qui suis-je ? <br> <hr></h2>
@@ -319,7 +320,7 @@
             <p class="left">Après avoir étudié la publicité et obtenu un master en marketing / communication, je me suis intéressée au web design. C'est pendant un stage dans ce domaine que j'ai découvert le code, suite à quoi j'ai décidé de suivre une formation de 9 mois à Simplon.</p>
             
             <p class="right">Nous avons étudié pendant les 3 premiers mois, le front (HTML, CSS, javascript, JQuery), ainsi que les outils d'aide au développement (frameworks, Github). <br>Puis pendant les 6 autres mois, le back (PHP: regex, model MVC, ..., MySQL, frameworks). <br>A l'issue de cette formation, j'obtiendrai un bac +2 en développement logiciel.</p>
-                        <article class="logo">
+            <article class="logo">
                 <figure>
                     <img src="img/bootstrap.png" alt="logo Bootstrap">
                 </figure>
@@ -343,41 +344,47 @@
                 </figure>
             </article>
             
-            <p class="left">Je cherche donc un stage en développement pendant lequel j'espère pouvoir approfondir mes connaissances, tout en contribuant à la réalisation de projets</p>
+            <p class="left">Je cherche un stage en développement web ou de logiciels, pendant lequel j'espère pouvoir approfondir mes connaissances, tout en contribuant à la réalisation de projets</p>
+              <article id="cv">
+              <!-- Lien de téléchargement du CV -->
+              <a href="img/cvJulie.png"
+              download="img/cvJulie.png">Télécharger mon CV</a>
+              </article>
             </article>
         </section>
 
     <!-- Section 'contact' / formulaire -->
         <section id="contact">
             <h2>N'hésitez pas à me contacter <br> <hr></h2>
-            <form class="main">
+            <form class="main" action="mailto:julie.canevet@hotmail.fr?subject=Portfolio">
             
             <article class="form-group">
               <label for="name" class="cols-sm-2 control-label">Votre nom</label>
                <div class="input-group cols-sm-10">
                 <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-               <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+               <input type="text" class="form-control" name="name" id="name"  placeholder="Nom"/>
                </div>
             </article>
 
             <article class="form-group">
               <label for="email" class="cols-sm-2 control-label">Votre adresse Email</label>
-                <div class="input-group cols-sm-10">
+                <div value="" class="input-group cols-sm-10">
                   <span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                  <input type="text" class="form-control" name="email" id="email"  placeholder="Email"/>
                 </div>
             </article>
 
             <article class="form-group">
               <label for="email" class="cols-sm-2 control-label">Votre Message</label>
-                <div class="input-group cols-sm-10">
+                <div value="" class="input-group cols-sm-10">
                   <span class="input-group-addon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
-                  <textarea class="form-control" name="message" id="message"  placeholder="Your message"></textarea>
+                  <textarea value="" class="form-control" name="message" id="message"  placeholder="Message..."></textarea>
                 </div>
             </article>
 
             <article class="form-group">
-              <a href="#" id="button">Envoyer</a>
+              <input type="hidden" name="">
+              <button id="button">Envoyer</a>
             </article>
             
      </form>
