@@ -446,7 +446,7 @@ footer p {
 
 /* choix des bonnes images pour les projets */
     .imageProjet:nth-child(1){
-        background-image: url(../img/archiduchesse.png);
+        background-image: url(../img/calcul.png);
     }
     
     .imageProjet:nth-child(2){
