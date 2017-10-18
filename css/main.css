@@ -446,7 +446,8 @@ footer p {
 
 /* choix des bonnes images pour les projets */
     .imageProjet:nth-child(1){
-        background-image: url(../img/calcul.png);
+        background-image: url(../img/ontech.png);
+
     }
     
     .imageProjet:nth-child(2){
@@ -458,15 +459,15 @@ footer p {
     }
     
     .imageProjet:nth-child(4){
-    background-image: url(../img/sport.png);
+        background-image: url(../img/calcul.png);
     }
     
     .imageProjet:nth-child(5){
-    background-image: url(../img/tatoo.png); 
+    background-image: url(../img/sport.png);
     }
     
     .imageProjet:nth-child(6){
-    background-image: url(../img/ontech.png);
+    background-image: url(../img/tatoo.png); 
     }
 
     .couleurHover, .couleurHover button {
