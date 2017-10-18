@@ -450,11 +450,11 @@ footer p {
     }
     
     .imageProjet:nth-child(2){
-    background-image: url(../img/airbnb.png);
+    background-image: url(../img/ciseaux.png);
     }
     
     .imageProjet:nth-child(3){
-    background-image: url(../img/boncoin.png);
+    background-image: url(../img/memo.png);
     }
     
     .imageProjet:nth-child(4){
