@@ -249,7 +249,7 @@ header figure {
 }
 
 #cv {
-    width: 300px;
+    width: 250px;
     text-align: center;
     margin: 2em auto 3em auto;
     font-family: 'Abril Fatface', cursive;
@@ -266,6 +266,11 @@ header figure {
     color: #eff3fb;
 }
 /* ====== Reglage de la partie contact ====== */
+#contact {
+    background-color: #FBC501;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
 form {
     width: 90%;
     margin: auto;
@@ -278,6 +283,7 @@ form {
     border-radius: 5px;
     padding: .5em;
     letter-spacing: .1em;
+    background-color: white;
 }
 
 /* ====== Reglage du footer ====== */
@@ -286,7 +292,6 @@ footer {
     width: 100%;
     padding: 1.4em;
     text-align: center;
-    margin-top: 3em;
 }
 
 footer p {   
