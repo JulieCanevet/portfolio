@@ -451,7 +451,7 @@ footer p {
 
 /* choix des bonnes images pour les projets */
     .imageProjet:nth-child(1){
-        background-image: url(../img/ontech.png);
+        background-image: url(../img/calcul.png);
 
     }
     
@@ -464,7 +464,7 @@ footer p {
     }
     
     .imageProjet:nth-child(4){
-        background-image: url(../img/calcul.png);
+        background-image: url(../img/ontech.png);
     }
     
     .imageProjet:nth-child(5){
